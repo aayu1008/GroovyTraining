@@ -3,6 +3,7 @@ pipeline {
     stage(DevBuild){
       steps{
         println 'this is a dev build'
+      }
     }
     stage(SitBuild){
       steps{

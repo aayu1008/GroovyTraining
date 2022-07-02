@@ -3,7 +3,7 @@ pipeline {
   stages{
     stage(Hello){
       steps{
-        println 'this is a dev build'
+        println 'this is a build pipeline demo'
       }
     }
     stage(DevBuild){
@@ -18,12 +18,12 @@ pipeline {
     }  
     stage(UATBuild){
       steps{
-        println 'this is a dev build'
+        println 'this is a UAT build'
       }
     }
     stage(ProdBuild){
       steps{
-        println 'this is a dev build'
+        println 'this is a prod build'
       }
     }
   }

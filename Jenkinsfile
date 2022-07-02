@@ -9,6 +9,7 @@ pipeline {
     stage(DevBuild){
       steps{
         println 'this is a dev build'
+        git branch: 'main', credentialsId: 'GithubCreds', url: 'https://github.com/aayu1008/GroovyTraining'
       }
     }
     stage(SitBuild){
